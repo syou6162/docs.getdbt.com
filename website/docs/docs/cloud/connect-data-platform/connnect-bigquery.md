@@ -129,6 +129,8 @@ For a general overview of this process, see the official docs for [Creating Shor
 
 Job retry deadline seconds is the maximum amount of time BigQuery will spend retrying a job before it gives up.
 
+</DetailsToggle>
+
 <DetailsToggle alt_header="Job creation timeout seconds">
 
 Job creation timeout seconds is the maximum time BigQuery will wait to start the job. If the job doesn’t start within that time, it times out.
