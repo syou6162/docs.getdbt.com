@@ -123,6 +123,8 @@ This feature allows users authenticating using local OAuth to access BigQuery re
 
 For a general overview of this process, see the official docs for [Creating Short-lived Service Account Credentials](https://cloud.google.com/iam/docs/create-short-lived-credentials-direct).
 
+</DetailsToggle>
+
 #### Job retry deadline seconds
 
 Job retry deadline seconds is the maximum amount of time BigQuery will spend retrying a job before it gives up.
