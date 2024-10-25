@@ -125,7 +125,7 @@ For a general overview of this process, see the official docs for [Creating Shor
 
 </DetailsToggle>
 
-#### Job retry deadline seconds
+<DetailsToggle alt_header="Job retry deadline seconds">
 
 Job retry deadline seconds is the maximum amount of time BigQuery will spend retrying a job before it gives up.
 
