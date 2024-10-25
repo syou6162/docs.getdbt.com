@@ -107,7 +107,7 @@ If your `maximum_bytes_billed` is 1000000000, you would enter that value in the 
 
 
 
-<DetailsToggle alt_header="Execution project">
+<Expandable alt_header="Execution project">
 
 By default, dbt will use the specified `project`/`database` as both:
 
