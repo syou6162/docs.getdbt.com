@@ -150,7 +150,7 @@ A designated location in the cloud where you can run your data processing jobs e
 
 For more information on [dataproc regions](https://cloud.google.com/bigquery/docs/locations), refer to the BigQuery documentation.
 
-</DetailsToggle>
+</Expandable>
 
 <Expandable alt_header="Dataproc cluster name">
 
