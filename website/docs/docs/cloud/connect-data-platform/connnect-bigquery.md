@@ -75,7 +75,7 @@ The `priority` for the BigQuery jobs that dbt executes can be configured with th
 
 </DetailsToggle>
 
-#### Retries
+<DetailsToggle alt_header="Retries">
 
 Retries in BigQuery help to ensure that jobs complete successfully by trying again after temporary failures, making your operations more robust and reliable.
 
