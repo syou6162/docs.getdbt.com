@@ -149,6 +149,8 @@ A designated location in the cloud where you can run your data processing jobs e
 
 For more information on [dataproc regions](https://cloud.google.com/bigquery/docs/locations), refer to the BigQuery documentation.
 
+</DetailsToggle>
+
 #### Dataproc cluster name
 
 A unique label you give to your group of virtual machines to help you identify and manage your data processing tasks in the cloud. When you integrate Dataproc with BigQuery, you need to provide the cluster name so BigQuery knows which specific set of resources (the cluster) to use for running the data jobs.
