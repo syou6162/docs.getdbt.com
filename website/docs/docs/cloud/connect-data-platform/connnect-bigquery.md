@@ -118,7 +118,7 @@ Optionally, you may specify an execution project to bill for query execution, in
 
 </DetailsToggle>
 
-<DetailsToggle alt_header="Impersonate service account">
+<Expandable alt_header="Impersonate service account">
 
 This feature allows users authenticating using local OAuth to access BigQuery resources based on the permissions of a service account.
 
