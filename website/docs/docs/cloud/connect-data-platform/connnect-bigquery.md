@@ -70,6 +70,21 @@ To customize your optional configurations in dbt Cloud:
 
 The following are the optional configs you can set in dbt Cloud:
 
+| Config                         | Information                                                                                                                  | Type    | Example                     |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
+| Priority                       | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
+| Retries                        | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
+| Location                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
+| Maximum bytes billed           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
+| Impersonate service account    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
+| Execution project              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
+| Job retry deadline seconds     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
+| Job creation timeout seconds   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
+| Google Cloud Storage bucket    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
+| Dataproc region                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
+| Dataproc cluster name          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
+
+
 <Expandable alt_header="Priority">
 
 The `priority` for the BigQuery jobs that dbt executes can be configured with the `priority` configuration in your BigQuery profile. The priority field can be set to one of `batch` or `interactive`. For more information on query priority, consult the [BigQuery documentation](https://cloud.google.com/bigquery/docs/running-queries).
@@ -94,9 +109,9 @@ When a `maximum_bytes_billed` value is configured for a BigQuery profile, that a
 
 If your `maximum_bytes_billed` is 1000000000, you would enter that value in the `maximum_bytes_billed` field in dbt cloud.
 
-|  Config | Description | Type | Example |
-| ------- | ----| ----- | -------- |
-| max bytes billed | info here | integer | 100000 |
+|  Config          | Description                                                             | Type    | Example |
+| ---------------- | ------------------------------------------------------------------------| ------- | -------- |
+| Max bytes billed | The max number of bytes that can be billed for a given BigQuery query   | Integer | `1000000000` |
 
 </Expandable>
 
