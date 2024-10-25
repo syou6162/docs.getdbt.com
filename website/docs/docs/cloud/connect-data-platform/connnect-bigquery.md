@@ -124,7 +124,7 @@ This feature allows users authenticating using local OAuth to access BigQuery re
 
 For a general overview of this process, see the official docs for [Creating Short-lived Service Account Credentials](https://cloud.google.com/iam/docs/create-short-lived-credentials-direct).
 
-</DetailsToggle>
+</Expandable>
 
 <Expandable alt_header="Job retry deadline seconds">
 
