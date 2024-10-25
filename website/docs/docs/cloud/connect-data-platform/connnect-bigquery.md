@@ -158,7 +158,7 @@ A unique label you give to your group of virtual machines to help you identify a
 
 Have a look at [Dataproc's document on Create a cluster](https://cloud.google.com/dataproc/docs/guides/create-cluster) for an overview on how clusters work.
 
-</DetailsToggle>
+</Expandable>
 
 ### Account level connections and credential management
 
