@@ -142,7 +142,7 @@ Job creation timeout seconds is the maximum time BigQuery will wait to start the
 
 Everything you store in Cloud Storage must be placed inside a [bucket](https://cloud.google.com/storage/docs/buckets). Buckets help you organize your data and manage access to it.
 
-</DetailsToggle>
+</Expandable>
 
 <Expandable alt_header="Dataproc region">
 
