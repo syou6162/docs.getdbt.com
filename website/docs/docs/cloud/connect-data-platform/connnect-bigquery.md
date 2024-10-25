@@ -74,7 +74,7 @@ The following are the optional configs you can set in dbt Cloud:
 
 The `priority` for the BigQuery jobs that dbt executes can be configured with the `priority` configuration in your BigQuery profile. The priority field can be set to one of `batch` or `interactive`. For more information on query priority, consult the [BigQuery documentation](https://cloud.google.com/bigquery/docs/running-queries).
 
-</DetailsToggle>
+</Expandable>
 
 <Expandable alt_header="Retries">
 
