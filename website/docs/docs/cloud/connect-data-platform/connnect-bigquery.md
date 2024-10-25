@@ -116,7 +116,7 @@ By default, dbt will use the specified `project`/`database` as both:
 
 Optionally, you may specify an execution project to bill for query execution, instead of the project/database where you materialize most resources.
 
-</DetailsToggle>
+</Expandable>
 
 <Expandable alt_header="Impersonate service account">
 
