@@ -79,6 +79,8 @@ The `priority` for the BigQuery jobs that dbt executes can be configured with th
 
 Retries in BigQuery help to ensure that jobs complete successfully by trying again after temporary failures, making your operations more robust and reliable.
 
+</DetailsToggle>
+
 #### Location
 
 The `location` of BigQuery datasets can be set using the `location` setting in a BigQuery profile. As per the [BigQuery documentation](https://cloud.google.com/bigquery/docs/locations), `location` may be either a multi-regional location (for example, `EU`, `US`), or a regional location (like `us-west2`).
