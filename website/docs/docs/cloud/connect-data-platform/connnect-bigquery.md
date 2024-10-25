@@ -144,7 +144,7 @@ Everything you store in Cloud Storage must be placed inside a [bucket](https://c
 
 </DetailsToggle>
 
-<DetailsToggle alt_header="Dataproc region">
+<Expandable alt_header="Dataproc region">
 
 A designated location in the cloud where you can run your data processing jobs efficiently. This region must match the location of your BigQuery dataset if you want to use Dataproc with BigQuery to ensure data doesn't move across regions, which can be inefficient and costly.
 
