@@ -157,6 +157,8 @@ A unique label you give to your group of virtual machines to help you identify a
 
 Have a look at [Dataproc's document on Create a cluster](https://cloud.google.com/dataproc/docs/guides/create-cluster) for an overview on how clusters work.
 
+</DetailsToggle>
+
 ### Account level connections and credential management
 
 You can re-use connections across multiple projects with [global connections](/docs/cloud/connect-data-platform/about-connections#migration-from-project-level-connections-to-account-level-connections). Connections are attached at the environment level (formerly project level), so you can utilize multiple connections inside of a single project (to handle dev, staging, production, etc.).
