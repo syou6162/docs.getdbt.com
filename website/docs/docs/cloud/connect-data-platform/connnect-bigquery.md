@@ -101,7 +101,7 @@ If your `maximum_bytes_billed` is 1000000000, you would enter that value in the 
 | ------- | ----| ----- | -------- |
 | max bytes billed | info here | integer | 100000 |
 
-
+</DetailsToggle>
 
 
 
