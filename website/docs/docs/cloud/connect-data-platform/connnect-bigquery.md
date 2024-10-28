@@ -71,7 +71,7 @@ The following are the optional configurations you can set in dbt Cloud:
 
 | Configuration                     | Information                                                                                                                  | Type    | Example                     |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
-| Priority                       | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
+| [Priority](#priority)             | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
 | Retries                        | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
 | Location                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
 | Maximum bytes billed           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
