@@ -74,14 +74,14 @@ The following are the optional configurations you can set in dbt Cloud:
 | [Priority](#priority)             | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
 | [Retries](#retries)                       | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
 | [Location](#location)                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
-| [Maximum bytes billed](#Maximum bytes billed)           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
-| [Impersonate service account](#Impersonate service account)    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
-| [Execution project](#Execution project)              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
-| [Job retry deadline seconds](#Job retry deadline seconds)     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
-| [Job creation timeout seconds](#Job creation timeout seconds )   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
-| [Google Cloud Storage bucket](#Google Cloud Storage bucket)    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
-| [Dataproc region](#Dataproc region)                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
-| [Dataproc cluster name](#Dataproc cluster name)          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
+| [Maximum bytes billed](#maximum-bytes-billed)           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
+| [Execution project](#execution-project)              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
+| [Impersonate service account](#impersonate-service-account)    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
+| [Job retry deadline seconds](#job-retry-deadline-seconds)     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
+| [Job creation timeout seconds](#job-creation-timeout-seconds)   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
+| [Google cloud storage-bucket](#google-cloud-storage-bucket)    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
+| [Dataproc region](#dataproc-region)                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
+| [Dataproc cluster name](#dataproc-cluster-name)          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
 
 
 <Expandable alt_header="Priority">
@@ -141,7 +141,13 @@ Job retry deadline seconds is the maximum amount of time BigQuery will spend ret
 Job creation timeout seconds is the maximum time BigQuery will wait to start the job. If the job doesn’t start within that time, it times out.
 
 </Expandable>
+
 #### Run dbt python models on Google Cloud Platform
+
+import BigQueryDataproc from '/snippets/_bigquery-dataproc.md';
+
+<BigQueryDataproc />
+
 <Expandable alt_header="Google cloud storage bucket">
 
 Everything you store in Cloud Storage must be placed inside a [bucket](https://cloud.google.com/storage/docs/buckets). Buckets help you organize your data and manage access to it.
