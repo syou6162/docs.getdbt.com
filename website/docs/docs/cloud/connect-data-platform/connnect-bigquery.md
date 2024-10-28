@@ -62,7 +62,6 @@ To customize your optional configurations in dbt Cloud:
 - Select **Your profile** from the menu
 - From there, click **Projects** and select your BigQuery project
 - Select your BigQuery project from the left-hand menu
-- Click **Settings** towards the top right and a **Project details** window will open
 - Scroll down to **Development Connection** and select BigQuery
 - Click **Edit** and then scroll down to **Optional settings**
 
