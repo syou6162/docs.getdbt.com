@@ -108,7 +108,6 @@ When a `maximum_bytes_billed` value is configured for a BigQuery profile, that a
 
 If your `maximum_bytes_billed` is 1000000000, you would enter that value in the `maximum_bytes_billed` field in dbt cloud.
 
-|  Config          | Description                                                             | Type    | Example |
 | ---------------- | ------------------------------------------------------------------------| ------- | -------- |
 | Max bytes billed | The max number of bytes that can be billed for a given BigQuery query   | Integer | `1000000000` |
 
