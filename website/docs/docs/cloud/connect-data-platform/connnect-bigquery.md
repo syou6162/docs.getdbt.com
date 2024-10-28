@@ -68,7 +68,7 @@ To customize your optional configurations in dbt Cloud:
 
 The following are the optional configurations you can set in dbt Cloud:
 
-| Configuration    | <div style={{width:'300px'}}>Information</div>   | Type    | Example            |
+| Configuration    | <div style={{width:'250'}}>Information</div>   | Type    | <div style={{width:'150'}}>Example</div>             |
 |---------------------------|-----------------------------------------|---------|--------------------|
 | [Priority](#priority)             | Sets the priority for BigQuery jobs (either `interactive` or queued for `batch` processing)  | String  | `batch` or `interactive`    |
 | [Retries](#retries)                       | Specifies the number of retries for failed jobs due to temporary issues             | Integer | `3`                         |
