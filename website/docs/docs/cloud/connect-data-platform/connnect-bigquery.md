@@ -72,7 +72,7 @@ The following are the optional configurations you can set in dbt Cloud:
 | Configuration                     | Information                                                                                                                  | Type    | Example                     |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
 | [Priority](#priority)             | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
-| Retries (#retries)                       | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
+| [Retries](#retries)                       | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
 | Location(#location)                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
 | Maximum bytes billed           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
 | Impersonate service account    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
