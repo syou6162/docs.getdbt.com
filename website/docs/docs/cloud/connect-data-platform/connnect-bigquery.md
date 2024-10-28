@@ -70,7 +70,7 @@ To customize your optional configurations in dbt Cloud:
 
 The following are the optional configurations you can set in dbt Cloud:
 
-| Config                         | Information                                                                                                                  | Type    | Example                     |
+| Configuration                     | Information                                                                                                                  | Type    | Example                     |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
 | Priority                       | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
 | Retries                        | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
