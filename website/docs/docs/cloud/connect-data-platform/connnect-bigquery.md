@@ -68,7 +68,7 @@ To customize your optional configurations in dbt Cloud:
 
 <Lightbox src="/img/bigquery/bigquery-optional-config.png" width="70%" title="BigQuery optional configuration"/>
 
-The following are the optional configs you can set in dbt Cloud:
+The following are the optional configurations you can set in dbt Cloud:
 
 | Config                         | Information                                                                                                                  | Type    | Example                     |
 |--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
