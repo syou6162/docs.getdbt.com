@@ -19,7 +19,7 @@ Use environments to customize settings for different stages of your project and 
 
 <Lightbox src="/img/dbt-env.png" width="90%" title="dbt Cloud environment hierarchy showing projects, environments, connections, and orchestration jobs." />
 
-Use environments to customize settings for different stages of your project and streamline the execution process by using software engineering principles. This page will detail the different types of environments and how to intuitively configure your development environment in dbt Cloud. 
+The following sections detail the different types of environments and how to intuitively configure your development environment in dbt Cloud. 
 
 import CloudEnvInfo from '/snippets/_cloud-environments-info.md';
 
