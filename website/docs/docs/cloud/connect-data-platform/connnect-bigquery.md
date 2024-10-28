@@ -80,7 +80,7 @@ The following are the optional configurations you can set in dbt Cloud:
 | [Job retry deadline seconds](#Job retry deadline seconds)     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
 | [Job creation timeout seconds](#Job creation timeout seconds )   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
 | [Google Cloud Storage bucket](#Google Cloud Storage bucket)    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
-| Dataproc region                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
+| [Dataproc region](#Dataproc region)                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
 | Dataproc cluster name          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
 
 
