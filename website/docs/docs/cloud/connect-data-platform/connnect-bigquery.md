@@ -61,7 +61,6 @@ To customize your optional configurations in dbt Cloud:
 1. Click your name at the bottom left-hand side bar menu in dbt Cloud
 2. Select **Your profile** from the menu
 3. From there, click **Projects** and select your BigQuery project
-4. Select your BigQuery project from the left-hand menu
 5. Go to **Development Connection** and select BigQuery
 6. Click **Edit** and then scroll down to **Optional settings**
 
@@ -69,19 +68,19 @@ To customize your optional configurations in dbt Cloud:
 
 The following are the optional configurations you can set in dbt Cloud:
 
-| Configuration                     | Information                                                                                                                  | Type    | Example                     |
-|--------------------------------|------------------------------------------------------------------------------------------------------------------------------|---------|-----------------------------|
-| [Priority](#priority)             | Sets the priority for BigQuery jobs (either immediate or queued for batch processing)                                       | String  | `batch` or `interactive`    |
-| [Retries](#retries)                       | Specifies the number of retries for failed jobs due to temporary issues                                                      | Integer | `3`                         |
-| [Location](#location)                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
-| [Maximum bytes billed](#maximum-bytes-billed)           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
-| [Execution project](#execution-project)              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
-| [Impersonate service account](#impersonate-service-account)    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
-| [Job retry deadline seconds](#job-retry-deadline-seconds)     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
-| [Job creation timeout seconds](#job-creation-timeout-seconds)   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
-| [Google cloud storage-bucket](#google-cloud-storage-bucket)    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
-| [Dataproc region](#dataproc-region)                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
-| [Dataproc cluster name](#dataproc-cluster-name)          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
+| Configuration    | <div style={{width:'250'}}>Information</div>   | Type    | <div style={{width:'150'}}>Example</div>             |
+|---------------------------|-----------------------------------------|---------|--------------------|
+| [Priority](#priority)             | Sets the priority for BigQuery jobs (either `interactive` or queued for `batch` processing)  | String  | `batch` or `interactive`    |
+| [Retries](#retries)                       | Specifies the number of retries for failed jobs due to temporary issues             | Integer | `3`                         |
+| [Location](#location)                       | Location for creating new datasets       | String  | `US`, `EU`, `us-west2`      |
+| [Maximum bytes billed](#maximum-bytes-billed)           | Limits the maximum number of bytes that can be billed for a query            | Integer | `1000000000`                |
+| [Execution project](#execution-project)              | Specifies the project ID to bill for query execution       | String  | `my-project-id`             |
+| [Impersonate service account](#impersonate-service-account)    | Allows users authenticated locally to access BigQuery resources under a specified service account   | String  | `service-account@project.iam.gserviceaccount.com` |
+| [Job retry deadline seconds](#job-retry-deadline-seconds)     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails    | Integer | `600`                       |
+| [Job creation timeout seconds](#job-creation-timeout-seconds)   | Specifies the maximum timeout for the job creation step       | Integer | `120`                       |
+| [Google cloud storage-bucket](#google-cloud-storage-bucket)    | Location for storing objects in Google Cloud Storage   | String  | `my-bucket`                 |
+| [Dataproc region](#dataproc-region)                | Specifies the cloud region for running data processing jobs    | String  | `US`, `EU`, `asia-northeast1` |
+| [Dataproc cluster name](#dataproc-cluster-name)          | Assigns a unique identifier to a group of virtual machines in Dataproc          | String  | `my-cluster`                |
 
 
 <Expandable alt_header="Priority">
@@ -158,7 +157,7 @@ Everything you store in Cloud Storage must be placed inside a [bucket](https://c
 
 A designated location in the cloud where you can run your data processing jobs efficiently. This region must match the location of your BigQuery dataset if you want to use Dataproc with BigQuery to ensure data doesn't move across regions, which can be inefficient and costly.
 
-For more information on [dataproc regions](https://cloud.google.com/bigquery/docs/locations), refer to the BigQuery documentation.
+For more information on [Dataproc regions](https://cloud.google.com/bigquery/docs/locations), refer to the BigQuery documentation.
 
 </Expandable>
 
