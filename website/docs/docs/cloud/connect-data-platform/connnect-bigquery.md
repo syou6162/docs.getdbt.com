@@ -81,7 +81,7 @@ The following are the optional configurations you can set in dbt Cloud:
 | [Job creation timeout seconds](#Job creation timeout seconds )   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
 | [Google Cloud Storage bucket](#Google Cloud Storage bucket)    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
 | [Dataproc region](#Dataproc region)                | Specifies the cloud region for running data processing jobs                                                                  | String  | `US`, `EU`, `asia-northeast1` |
-| Dataproc cluster name          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
+| [Dataproc cluster name](#Dataproc cluster name)          | Assigns a unique identifier to a group of virtual machines in Dataproc                                                       | String  | `my-cluster`                |
 
 
 <Expandable alt_header="Priority">
