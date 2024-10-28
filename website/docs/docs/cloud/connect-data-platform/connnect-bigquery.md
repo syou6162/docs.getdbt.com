@@ -76,7 +76,7 @@ The following are the optional configurations you can set in dbt Cloud:
 | [Location](#location)                       | Location for creating new datasets                                                                                           | String  | `US`, `EU`, `us-west2`      |
 | [Maximum bytes billed](#Maximum bytes billed)           | Limits the maximum number of bytes that can be billed for a query                                                            | Integer | `1000000000`                |
 | Impersonate service account    | Allows users authenticated locally to access BigQuery resources under a specified service account                           | String  | `service-account@project.iam.gserviceaccount.com` |
-| Execution project              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
+| [Execution project](#Execution project)              | Specifies the project ID to bill for query execution                                                                         | String  | `my-project-id`             |
 | Job retry deadline seconds     | Sets the total number of seconds BigQuery will attempt to retry a job if it fails                                            | Integer | `600`                       |
 | Job creation timeout seconds   | Specifies the maximum timeout for the job creation step                                                                      | Integer | `120`                       |
 | Google Cloud Storage bucket    | Location for storing objects in Google Cloud Storage                                                                         | String  | `my-bucket`                 |
