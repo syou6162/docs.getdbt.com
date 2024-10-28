@@ -141,7 +141,7 @@ Job retry deadline seconds is the maximum amount of time BigQuery will spend ret
 Job creation timeout seconds is the maximum time BigQuery will wait to start the job. If the job doesn’t start within that time, it times out.
 
 </Expandable>
-
+#### Run dbt python models on Google Cloud Platform
 <Expandable alt_header="Google cloud storage bucket">
 
 Everything you store in Cloud Storage must be placed inside a [bucket](https://cloud.google.com/storage/docs/buckets). Buckets help you organize your data and manage access to it.
