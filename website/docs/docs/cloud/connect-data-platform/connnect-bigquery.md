@@ -58,7 +58,7 @@ In BigQuery, optional configurations let you tailor settings for tasks such as q
 
 To customize your optional configurations in dbt Cloud:
 
-- Click your name at the bottom left-hand side bar menu in dbt Cloud
+1. Click your name at the bottom left-hand side bar menu in dbt Cloud
 - Select **Your profile** from the menu
 - From there, click **Projects** and select your BigQuery project
 - Select your BigQuery project from the left-hand menu
