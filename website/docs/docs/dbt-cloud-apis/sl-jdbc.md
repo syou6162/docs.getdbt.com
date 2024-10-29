@@ -56,7 +56,7 @@ The Semantic Layer JDBC API has built-in metadata calls which can provide a user
 
 Expand the following toggles for examples and metadata commands:
 
-<DetailsToggle alt_header="Fetch defined metrics">
+<Expandable alt_header="Fetch defined metrics">
 
 You can use this query to fetch all defined metrics in your dbt project:
 
@@ -65,9 +65,9 @@ select * from {{
 	semantic_layer.metrics() 
 }}
 ```
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch dimension for a metric">
+<Expandable alt_header="Fetch dimension for a metric">
 
 You can use this query to fetch all dimensions for a metric.
 
@@ -77,9 +77,9 @@ Note, metrics is a required argument that lists one or multiple metrics in it.
 select * from {{ 
     semantic_layer.dimensions(metrics=['food_order_amount'])}}
 ```
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch dimension values">
+<Expandable alt_header="Fetch dimension values">
 
 You can use this query to fetch dimension values for one or multiple metrics and a single dimension.
 
@@ -89,9 +89,9 @@ Note, metrics is a required argument that lists one or multiple metrics, and a s
 select * from {{ 
 semantic_layer.dimension_values(metrics=['food_order_amount'], group_by=['customer__customer_name'])}}
 ```
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch granularities for metrics">
+<Expandable alt_header="Fetch granularities for metrics">
 
 You can use this query to fetch queryable granularities for a list of metrics. 
 
@@ -103,9 +103,9 @@ select * from {{
     semantic_layer.queryable_granularities(metrics=['food_order_amount', 'order_gross_profit'])}}
 ```
 
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch available metrics given dimensions">
+<Expandable alt_header="Fetch available metrics given dimensions">
 
 You can use this query to fetch available metrics given dimensions. This command is essentially the opposite of getting dimensions given a list of metrics.
 
@@ -117,9 +117,9 @@ select * from {{
 }}
 ```
 
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch granularities for all time dimensions">
+<Expandable alt_header="Fetch granularities for all time dimensions">
 
 You can use this example query to fetch available granularities for all time dimensions (the similar queryable granularities API call only returns granularities for the primary time dimensions for metrics).
 
@@ -133,9 +133,9 @@ select NAME, QUERYABLE_GRANULARITIES from {{
 }}
 ```
 
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch primary time dimension names">
+<Expandable alt_header="Fetch primary time dimension names">
 
 It may be useful in your application to expose the names of the time dimensions that represent metric_time or the common thread across all metrics.
 
@@ -147,9 +147,9 @@ select * from {{
 }}
 ```
 
-</DetailsToggle>
+</Expandable>
 
-<DetailsToggle alt_header="Fetch metrics by substring search">
+<Expandable alt_header="Fetch metrics by substring search">
 
 You can filter your metrics to include only those that contain a specific substring. Use the `search` argument to specify the substring you want to match.
 
@@ -159,9 +159,9 @@ select * from {{ semantic_layer.metrics(search='order') }}
 
 If no substring is provided, the query returns all metrics.
 
-</DetailsToggle> 
+</Expandable> 
 
-<DetailsToggle alt_header="Paginate metadata calls">
+<Expandable alt_header="Paginate metadata calls">
 
 In cases where user manifests are large, pagination is a useful way to prevent query character limits in the data platform. You can paginate results for both `semantic_layer.metrics()` and `semantic_layer.dimensions()` calls using the `page_size` and `page_number` parameters.
 
@@ -182,9 +182,9 @@ select * from {{ semantic_layer.metrics() }}
 ```
 
 You can use the same pagination parameters for `semantic_layer.dimensions(...)`.
-</DetailsToggle> 
+</Expandable> 
 
-<DetailsToggle alt_header="List saved queries">
+<Expandable alt_header="List saved queries">
 
 You can use this example query to list all available saved queries in your dbt project.
 
@@ -200,7 +200,7 @@ select * from semantic_layer.saved_queries()
 | NAME | DESCRIPTION | LABEL | METRICS | GROUP_BY | WHERE_FILTER |
 ```
 
-</DetailsToggle>
+</Expandable>
 
 <!--
 <Tabs>
