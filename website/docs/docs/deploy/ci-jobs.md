@@ -28,7 +28,7 @@ To make CI job creation easier, many options on the **CI job** page are set to d
 2. Options in the **Job settings** section:
     - **Job name** &mdash; Specify the name for this CI job.
     - **Description** &mdash; Provide a description about the CI job.
-    - **Environment** &mdash; By default, it’s set to the environment you created the CI job from. Use the dropdown to change the default setting. 
+    - **Environment** &mdash; By default, this will be set to the environment you created the CI job from. Use the dropdown to change the default setting. 
 
 3. Options in the **Git trigger** section:
     - **Triggered by pull requests** &mdash; By default, it’s enabled. Every time a developer opens up a pull request or pushes a commit to an existing pull request, this job will get triggered to run.
