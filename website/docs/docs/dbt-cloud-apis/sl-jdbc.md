@@ -151,7 +151,7 @@ select * from {{
 
 <Expandable alt_header="Fetch metrics by substring search">
 
-You can filter your metrics to include only those that contain a specific substring. Use the `search` argument to specify the substring you want to match.
+You can filter your metrics to include only those that contain a specific substring (sequence of characters contained within a larger string (text)). Use the `search` argument to specify the substring you want to match.
 
 ```sql
 select * from {{ semantic_layer.metrics(search='order') }}
