@@ -149,6 +149,40 @@ select * from {{
 
 </DetailsToggle>
 
+<DetailsToggle alt_header="Fetch metrics by substring search">
+
+You can filter your metrics to include only those that contain a specific substring. Use the `search` argument to specify the substring you want to match.
+
+```sql
+select * from {{ semantic_layer.metrics(search='order') }}
+```
+
+If no substring is provided, the query returns all metrics.
+
+</DetailsToggle> 
+
+<DetailsToggle alt_header="Paginate metadata calls">
+
+In cases where user manifests are large, pagination is a useful workaround to prevent query character limits in the data warehouse. You can paginate results for both `semantic_layer.metrics()` and `semantic_layer.dimensions()` calls using the `page_size` and `page_number` parameters.
+
+- `page_size`: Optional, sets the number of records per page. If left as `None`, there is no page limit.
+- `page_number`: Required, specifies the page number to retrieve. Defaults to `1` if not specified.
+
+Examples:
+
+```sql
+-- Retrieves the 5th page with a page size of 10 metrics
+select * from {{ semantic_layer.metrics(page_size=10, page_number=5) }}
+
+-- Retrieves the 1st page with a page size of 10 metrics
+select * from {{ semantic_layer.metrics(page_size=10) }}
+
+-- Retrieves all metrics without pagination
+select * from {{ semantic_layer.metrics() }}
+You can use the same pagination parameters for semantic_layer.dimensions(...).
+```
+</DetailsToggle> 
+
 <DetailsToggle alt_header="List saved queries">
 
 You can use this example query to list all available saved queries in your dbt project.
