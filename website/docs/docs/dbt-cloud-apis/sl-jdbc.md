@@ -163,10 +163,10 @@ If no substring is provided, the query returns all metrics.
 
 <DetailsToggle alt_header="Paginate metadata calls">
 
-In cases where user manifests are large, pagination is a useful workaround to prevent query character limits in the data warehouse. You can paginate results for both `semantic_layer.metrics()` and `semantic_layer.dimensions()` calls using the `page_size` and `page_number` parameters.
+In cases where user manifests are large, pagination is a useful way to prevent query character limits in the data platform. You can paginate results for both `semantic_layer.metrics()` and `semantic_layer.dimensions()` calls using the `page_size` and `page_number` parameters.
 
 - `page_size`: Optional, sets the number of records per page. If left as `None`, there is no page limit.
-- `page_number`: Required, specifies the page number to retrieve. Defaults to `1` if not specified.
+- `page_number`: Optional, specifies the page number to retrieve. Defaults to `1` (first page) if not specified.
 
 Examples:
 
@@ -179,8 +179,9 @@ select * from {{ semantic_layer.metrics(page_size=10) }}
 
 -- Retrieves all metrics without pagination
 select * from {{ semantic_layer.metrics() }}
-You can use the same pagination parameters for semantic_layer.dimensions(...).
 ```
+
+You can use the same pagination parameters for `semantic_layer.dimensions(...)`.
 </DetailsToggle> 
 
 <DetailsToggle alt_header="List saved queries">

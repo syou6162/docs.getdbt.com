@@ -20,9 +20,9 @@ Release notes are grouped by month for both multi-tenant and virtual private clo
 
 ## October 2024
 
-- **Enhancement**: The dbt Semantic Layer JDBC now allows users to paginate can paginate `semantic_layer.metrics()` and `semantic_layer.dimensions()` for metrics and dimensions using `page_size` and `page_number` parameters. ADD LINK TO JDBC AND ADD TO JDBC DOCS
-- **Enhancement**: The dbt Semantic Layer JDBC now allows users to filter down the result set of the metadata call to anything that contains the substring of search if provided, otherwise just return everything as per usual. ADD LINK TO JDBC AND ADD TO JDBC DOCS
-- **Fix**: The dbt Semantic Layer Excel integration now correctly surfaces errors when a query fails to execute. Previously, it was not clear why a query failed to run.
+- **Enhancement**: The dbt Semantic Layer JDBC now allows users to paginate can paginate `semantic_layer.metrics()` and `semantic_layer.dimensions()` for metrics and dimensions using `page_size` and `page_number` parameters. Refer to [Paginate metadata calls](/docs/dbt-cloud-apis/sl-jdbc#querying-the-api-for-metric-metadata) for more information.
+- **Enhancement**: The dbt Semantic Layer JDBC now allows you to filter your metrics to include only those that contain a specific substring, using the `search` parameter. If no substring is provided, the query returns all metrics. Refer to [Fetch metrics by substring search](/docs/dbt-cloud-apis/sl-jdbc#querying-the-api-for-metric-metadata) for more information.
+- **Fix**: The [dbt Semantic Layer Excel integration](/docs/cloud-integrations/semantic-layer/excel) now correctly surfaces errors when a query fails to execute. Previously, it was not clear why a query failed to run.
 
 - **Behavior change:** User API tokens have been deprecated. Update to [personal access tokens](/docs/dbt-cloud-apis/user-tokens) if you have any still in use.
 - **New**: The dbt Cloud IDE supports signed commits for Git, available for Enterprise plans. You can sign your Git commits when pushing them to the repository to prevent impersonation and enhance security. Supported Git providers are GitHub and GitLab. Refer to [Git commit signing](/docs/cloud/dbt-cloud-ide/git-commit-signing.md) for more information.
